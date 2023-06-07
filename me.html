@@ -14,7 +14,7 @@
   <nav style="text-align: center;"> 
         <a href="mv.html"><span style="color: red;"> 📌 HOME </span></a> 
         <a href="me.html"><span style="color: yellow;"> | BACA </a> 
-        <a href="contact.html"><span style="color: red;"> | CONTACT</a> 
+        <a href="linkmod.html"><span style="color: red;"> | LINKMOD</a> 
         <a href="about.html"><span style="color: yellow;"> | ABOUT ✏️</a>
     </nav>
     
@@ -26,5 +26,25 @@
 	<p style="text-align:center; color: yellow;">Silahkan klik tombol di bawah</p> 
 	 <div style="text-align: center;"> 
          <a href="mv.html"><button style="text-align: center; color:red;">SIAP BOOSS</button></a>
+<hr>
+     	<div style="text-align: center; color: yellow;"> 
+     	<div id="marnez"></div>
+     <script src="jquery.min.js"></script>
+        <script>
+            var url = "🤭"; // url tujuan
+            var count = 15; // dalam detik
+            function countDown() {
+                if (count > 0) {
+                    count--;
+                    var waktu = count + 1;
+                    $('#marnez').html('<b style="color: red;">🔊BACA SING BENER </b> ' + url + ' SESAWAKTU ' + waktu + ' detik.');
+                    setTimeout("countDown()", 1000);
+                } else {
+                    window.location.href = url;
+                }
+            }
+            countDown();
+        </script>
+        </div>
  </body> 
  </html>
